@@ -6,13 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/mQnSDKBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="七牛云短视频SDK" />
+
+    <Button
+        android:id="@+id/mQiniuPlayerBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="七牛播放器"
+        app:layout_constraintTop_toBottomOf="@id/mQnSDKBt" />
+
+    <Button
+        android:id="@+id/mSeekColorPickerViewBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="颜色选择器"
+        app:layout_constraintTop_toBottomOf="@id/mQiniuPlayerBt" />
+
+    <Button
+        android:id="@+id/mNinetonProgressbarBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.0透明度进度条"
+        app:layout_constraintTop_toBottomOf="@id/mSeekColorPickerViewBt" />
+
 
 </android.support.constraint.ConstraintLayout>
